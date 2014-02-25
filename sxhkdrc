@@ -7,6 +7,9 @@ XF86Audio{Play,Stop,Prev,Next}
 XF86Audio{Mute,LowerVolume,RaiseVolume}
     vol.sh {m,d,i}
 
+super + shift + Return
+    urxvtc
+
 super + y ; {e,w,i,x,Return}
     {gvim,$BROWSER,xbmc,urxvtc}
 
