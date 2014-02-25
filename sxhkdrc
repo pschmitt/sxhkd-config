@@ -1,0 +1,23 @@
+ctrl + alt + {Up,Down,Left,Right}
+    mpc {toggle,stop,prev,next}
+
+XF86Audio{Play,Stop,Prev,Next}
+    mpc {toggle,stop,prev,next}
+
+XF86Audio{Mute,LowerVolume,RaiseVolume}
+    vol.sh {m,d,i}
+
+super + y ; {e,w,i,x,Return}
+    {gvim,$BROWSER,xbmc,urxvtc}
+
+ctrl + alt + Delete
+    urxvtc -e htop
+
+super + shift + l
+    slock
+
+Print
+    scrot '%Y-%m-%d_%H-%M-%S.png' -e 'mv $f ~/pictures/scrot/'
+
+ctrl + Print
+    scrot -d 3 '%Y-%m-%d_%H-%M-%S.png' -e 'mv $f ~/pictures/scrot'
