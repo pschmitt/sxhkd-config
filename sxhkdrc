@@ -7,11 +7,20 @@ XF86Audio{Play,Stop,Prev,Next}
 XF86Audio{Mute,LowerVolume,RaiseVolume}
     vol.sh {m,d,i}
 
+#XF86Launch0
+#    xdotool key super+p
+
 super + shift + Return
     urxvtc
 
-super + y ; {e,w,i,x,Return}
-    {gvim,$BROWSER,xbmc,urxvtc}
+super + x ; {e,w,x,v,i,j,Return}
+    {gvim,$BROWSER,xbmc,vlc,idea.sh,xournal,urxvtc}
+
+#super + o
+#    xrdr rotate
+
+super + o ; {Up,Down,Left,Right}
+    xrdr rotate {inverted,normal,left,right}
 
 ctrl + alt + Delete
     urxvtc -e htop
